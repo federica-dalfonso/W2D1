@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 1.5%;
+}
+
+.pinterest-card {
+    width: 400px;
+    height: 520px;
+    background-color: white;
+    text-align: center;
+}
+
+.card-image {
+    position: relative;
+    padding: 10px;
+}
+
+#img {
+    width: 370px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.card-buttons {
+    position: absolute;
+    top: 30px;
+}
+
+.save {
+    margin-bottom: 330px;
+    margin-left: 260px;
+
+}
+
+#save-button {
+    position: absolute;
+    border-radius: 50px;
+    border: none;
+    background-color: #E60022;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    width: 90px;
+    height: 60px;
+    opacity: 0;
+}
+
+.button-down {
+    position: absolute;
+    width: 370px;
+    top: 130%;
+    left: 3%;
+    opacity: 0;
+}
+
+.down {
+    display: inline-block;
+    margin: 10px;
+}
+
+#visit-button {
+    border-radius: 40px;
+    border: none;
+    width: 180px;
+    height: 45px;
+    opacity: .8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#visit-txt {
+    font-size: 11pt;
+}
+
+#share-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    opacity: .8;
+}
+
+#dots-button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    opacity: .8;
+}
+
+.card-image:hover .button-down {
+    transform: translateY(-20%);
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+.card-image:hover #save-button {
+    transform: translateY(30%);
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+/* l'effetto "scuro" al passaggio del mouse mi è 
+poco chiaro; credo di aver compreso male io il concetto, 
+mi torna sempre in mente la "logica" a "maschera" utilizzata
+in Illustrator per creare questo effetto sulle immagini, 
+ma non credo sia assolutamente quella giusta; ho provato anche
+ad assegnare opacità all'immagine e a toglierla all'hover, 
+ma ovviamente l'effetto è bianco (perchè lo sfondo del div di
+riferimento è bianco - devo chiarirmi questa cosa*/

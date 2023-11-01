@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pinterest Card</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="pinterest-card">
+
+        <div class="card-box">
+
+            <div class="card-image">                    
+                <img id="img" src="musicassette-image.jpg" alt="immagine di musicassetta">
+
+            
+                <div class="card-buttons">
+                        <div class="save">
+                            <button id="save-button">Save</button> 
+                        </div>
+
+                        <!--nell'esercizio ho inserito icone differenti da quelle presenti nel modello,
+                        in quanto non sono riuscita a trovare nella versione 5.15.4 di fontawesome
+                        quelle corrispondenti, e quelle della versione 6 non funzionavano con lo script
+                        fornito durante l'esercitazione; non sono riuscita a capire come sistemare questa cosa-->
+
+
+                        <div class="button-down">
+                            <div class="down">
+                                <button id="visit-button">
+                                    <i class="fas fa-external-link-alt" style="color: #000000; margin-left: 3px;"></i>
+                                    <span id="visit-txt">visitmywebsitesformorecontent</span>
+                                </button>
+                            </div>
+
+                            <div class="down">
+                                <button id="share-button">
+                                    <i class="fas fa-arrow-up" style="color: #000000;"></i>
+                                </button>
+                            </div>
+
+                            <div class="down">
+                                <button id="dots-button">
+                                    <i class="fas fa-ellipsis-h" style="color: #000000;"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
